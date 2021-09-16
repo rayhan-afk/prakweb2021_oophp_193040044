@@ -1,15 +1,15 @@
-<?php 
+<?php
 
 //Jualan Produk
 //Komik
 //Game
 
-class Produk 
+class Produk
 {
   public $judul,
-         $penulis,
-         $penerbit,
-         $harga;
+    $penulis,
+    $penerbit,
+    $harga;
 
   public function __construct($judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0)
   {
@@ -19,7 +19,8 @@ class Produk
     $this->harga = $harga;
   }
 
-  public function getLabel() {
+  public function getLabel()
+  {
     return "$this->penulis, $this->penerbit";
   }
 }
